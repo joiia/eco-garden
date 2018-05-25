@@ -1,0 +1,9 @@
+.col {
+    &--sm-dwn-static {
+        
+        @mixin atM-down {
+            position: static;
+        }
+        
+    }
+}

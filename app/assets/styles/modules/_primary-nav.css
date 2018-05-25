@@ -1,0 +1,109 @@
+.primary-nav {
+    
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+    &--pull-right {
+        @mixin atM {
+            float: right;
+        }
+    }
+    
+    > ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    > ul > li {
+        position: relative;
+        font-size: $px28;
+        color: $violet;
+        list-style: none;
+        display: block;
+        padding-bottom: 5px;
+        
+        @mixin atXS {
+            font-size: $px54;
+        }
+        
+        @mixin atM {
+            padding-bottom: 0;
+            font-size: $px16;
+            display: inline-block;
+            padding-right: 15px;
+            padding-top: 3px;
+            padding-bottom: 10px;
+        }
+        
+        @mixin atL {
+            font-size: $px18;
+            padding-right: 35px;
+            padding-top: 0;
+            
+        }
+        
+        @mixin atXL {
+            padding-top: 13px;
+            padding-bottom: 26px;
+            
+        }
+    }
+    
+    > ul > li:last-child {
+        padding-right: 0;
+        @mixin atM {
+            padding-right: 0;
+        }
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+        transition: all .5s;
+        
+        @mixin atM {
+            color: $violet;
+        }
+        
+        &:hover {
+            color: $red-l2;
+            @mixin atM {
+                color: $red;
+            }
+        }
+    }
+    
+    &__child {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 180px;
+        background: #f9f0dd;
+        padding: 18px 24px 24px !important;
+        font-size: $px12 !important;
+        font-family: $normal;
+        border-top: 2px solid $red-l;
+        transition: all .5s;
+        opacity: 0;
+        z-index: -1;
+        transform: translateY(10px);
+        line-height: 2;
+        > li {
+            display: block !important;
+        }
+    }
+    
+    li:last-child > .primary-nav__child {
+        left: inherit;
+        right: 0;
+    }
+    li:hover > .primary-nav__child {
+        @mixin atM {
+            opacity: 1;
+            z-index: 2;
+            transform: translateY(0);
+        }
+    }
+}

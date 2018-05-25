@@ -1,0 +1,15 @@
+body {
+    font-family: $semibold;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    @mixin atXL {
+       max-width: 1170px; 
+    }
+    
+}

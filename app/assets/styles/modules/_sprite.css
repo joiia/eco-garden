@@ -1,0 +1,42 @@
+
+
+
+        .icon {
+            background-image: url('../../assets/images/sprites/sprite-d5c9cdf2.svg');
+        }
+
+        .no-svg .icon {
+            background-image: url('../../assets/images/sprites/sprite-d5c9cdf2.png');
+        }
+
+        
+
+    .icon--delivery {
+        width: 46.14px; 
+        height: 46.6px;
+        background-position: 0 99.25093632958801%;  
+    }
+
+    .icon--guarantee {
+        width: 46.14px; 
+        height: 46.6px;
+        background-position: 29.603490311818295% 99.25093632958801%;  
+    }
+
+    .icon--logo {
+        width: 202px; 
+        height: 53px;
+        background-position: 0 0;  
+    }
+
+    .icon--sales {
+        width: 46.14px; 
+        height: 46.6px;
+        background-position: 59.20698062363659% 99.25093632958801%;  
+    }
+
+    .icon--specialist {
+        width: 46.14px; 
+        height: 46.6px;
+        background-position: 88.8104709354549% 99.25093632958801%;  
+    }
