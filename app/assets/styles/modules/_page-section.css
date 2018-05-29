@@ -1,12 +1,59 @@
 .page-section {
-    
-    min-height: 1000px;
-    
-    &--img-bg {
-        background: #efe2ce;
-        background: url('../../assets/images/bg--trees.jpg'), #efe2ce;
-        min-height: 100vh;
-        background-attachment: fixed;
+    overflow: hidden;
+    padding: 62px 0 45px;
+        
+    @mixin atXS {
+        padding: 92px 0 75px;
     }
     
+    @mixin atL {
+        padding: 55px 0 65px;
+    }
+    
+    
+    &--trees-bg {
+        min-height: 400px;
+        background: #efe2ce;
+        background: url('../../assets/images/bg--trees.jpg'), #efe2ce;
+        background-attachment: fixed;
+        padding: 66px 0;
+        
+        @mixin atXS {
+            padding: 100px 0 55px;
+        }
+
+        @mixin atL {
+            padding: 25px 0 53px;
+        }
+        
+    }
+    
+    &--image-bg {
+        position: relative;
+        padding: 50px 0;
+    
+        @mixin atXS {
+            padding: 70px 0 90px;
+        }
+
+        @mixin atL {
+            padding: 140px 0 110px;
+        }
+        
+        img {
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            height: 100%;
+            width: auto;
+            max-width: 5000px !important;
+        }
+    }
+    
+    &--vl {
+        background: $violet;
+        color: $yellow-l;
+    }
 }

@@ -11,5 +11,13 @@ img {
     @mixin atXL {
        max-width: 1170px; 
     }
-    
 }
+
+p {
+    font-size: $px12;
+    
+    @mixin atXS {
+        font-size: $px18;
+    }
+}
+

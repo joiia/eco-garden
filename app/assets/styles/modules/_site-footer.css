@@ -1,1 +1,54 @@
-.site-footer{}
+.site-footer {
+    background: $violet-d;
+    padding: 7px 0;
+    color: #fff;
+    font-family: $normal;
+    font-size: $px9;
+    
+    @mixin atXS {
+        padding: 20px 0;
+        font-size: $px14;
+    }
+    
+    &__feb-logo {
+        a {
+            display: block;
+            background: url('../../assets/images/feb-logo.png');
+            height: 35px;
+            width: 35px;
+            transform: scale(0.7);
+            
+            @mixin atXS {
+                transform: scale(1);
+            }
+        }
+    }
+    
+    &__policy {
+        text-align: center;
+        padding-top: 10px;
+        
+        @mixin atXS {
+            padding-top: 7px;
+        }
+        
+        @mixin atM {
+            text-align: right;
+        }
+    }
+    
+    &__copyright {
+        text-align: right;
+        padding-top: 10px;
+        font-family: $semibold;
+        
+        @mixin atXS {
+            padding-top: 7px;
+        }
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,70 @@
+.features {
+    color: $yellow-l;
+    font-size: $px14;
+    
+    
+    &__item {  
+    }
+    
+    &__item-desc {
+        position: relative;
+        line-height: 1;
+        display: block;
+        padding-left: 42px;
+        padding-top: 5px;
+        margin-bottom: 30px;
+        
+        @mixin atXS {
+            font-size: $px21;
+            padding-left: 55px;
+        }
+        
+        @mixin atM {
+            font-size: $px36;
+        }
+        
+        @mixin atL {
+            font-size: $px36;
+            padding-left: 85px;
+            padding-top: 20px;
+        }
+        
+        &--s-hidden {
+            font-size: 0;
+            
+            &:after {
+                content: "*";
+                font-size: $px14; 
+            }
+            
+            @mixin atM {
+                display: block;
+                font-size: $px14;
+                font-family: $normal;
+                margin-top: 0.75rem;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    i {
+        display: block;
+        transform: scale(0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: top right;
+        
+        @mixin atXS {
+            left: 10px;
+            transform: scale(0.9);
+        }
+        
+        @mixin atL {
+            transform: scale(1.5);
+            transform-origin: top left;
+        }
+    }
+}

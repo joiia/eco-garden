@@ -1,0 +1,28 @@
+.contacts {
+    
+    &__item {
+        margin-bottom: 2rem;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__title {
+        
+    }
+    
+    &__phone {
+        font-size: $px21;
+        line-height: 1.2;
+    
+        @mixin atXS {
+            font-size: $px32;
+            line-height: 1;
+        }
+        
+        @mixin atL {
+            font-size: $px18;
+        }
+    }
+}

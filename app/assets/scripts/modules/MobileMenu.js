@@ -17,6 +17,10 @@ class MobileMenu {
         this.siteHeader.toggleClass("site-header--is-expanded");
         this.menuIcon.toggleClass("site-header__menu-icon--close-x");
     }
+    
+    detectVisMenu() {
+        
+    }
 }
 
 export default MobileMenu;

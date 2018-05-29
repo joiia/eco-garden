@@ -1,0 +1,53 @@
+.sidebar-slider {
+    margin: 0 -15px;
+    
+    @mixin atM {
+        margin: 0;
+    }
+    
+    &__slide {
+         background: $sand-l;
+        box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.05);
+        margin-bottom: 36px; 
+        height: 380px;
+        position: relative;
+        margin-bottom: 36px;
+        
+        @mixin atM {
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        img {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    
+    &__slide-desc {
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        text-align: left;
+        background: $green;
+        padding: 26px;
+        font-size: $px32;
+        width: 100%;
+        text-align: center;
+        
+        line-height: 1;
+        color: $yellow;
+        
+        @mixin atM {
+            border-radius: 0 0 5px 5px;
+        }
+        
+        @mixin atL {
+            text-align: left;
+        }
+    }
+}

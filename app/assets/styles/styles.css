@@ -3,8 +3,8 @@
 
 @import "base/_fonts";
 @import "base/_variables";
-@import "base/_global";
 @import "base/_mixins";
+@import "base/_global";
 @import "modules/_row";
 @import "modules/_col";
 @import "modules/_btn";
@@ -15,5 +15,11 @@
 @import "modules/_site-footer";
 @import "modules/_site-header";
 @import "modules/_primary-nav";
+@import "modules/_features";
+@import "modules/_product-item";
+@import "modules/_sidebar";
+@import "modules/_sidebar-slider";
+@import "modules/_other-products";
+@import "modules/_contacts";
 @import "modules/_reveal-item";
 @import "modules/_modal";

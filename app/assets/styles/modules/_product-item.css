@@ -1,0 +1,142 @@
+.product-item {
+    background: $sand-l;
+    padding: 35px 15px 55px;
+    margin: 0 -15px 36px;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.05);
+    
+    @mixin atXS {
+        padding: 50px 15px 84px;
+    }
+    
+    @mixin atS {
+        padding: 40px 40px 70px;
+        margin: 0 0 30px;
+        border-radius: 5px;
+    }
+    
+    @mixin atL {
+        padding: 54px 70px 104px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    &__content {
+        display: flex;
+    }
+      
+    &__photos {
+        flex: 0 0 145px;
+        padding-right: 3px;
+        overflow: hidden;
+        display: flex;
+        
+        @mixin atXS {
+            padding-right: 4px;
+            flex: 0 0 218px;
+        }
+        
+        @mixin atL {
+            flex: 0 0 243px;
+        }
+        
+        @mixin atXL {
+            padding-right: 2px;
+            flex: 0 0 497px;
+        }
+    }
+    
+    &__col-1 {
+        @mixin atXL {
+            padding-right: 5px;
+        }
+    }
+    
+    &__col-2 {
+        display: none;
+        
+        @mixin atXL {
+            display: block;
+        }
+        
+    }
+    
+    &__photo {
+        &:nth-child(2) {
+            padding-top: 6px;
+        }
+    }
+    
+    &__table {
+        padding-left: 3px;
+        flex: 1 1 0;
+        
+        @mixin atXS {
+            padding-left: 4px;
+        }
+        
+        @mixin atXL {
+            padding-left: 2px;
+            
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        td {
+            width: 50%;
+            color: $violet;
+            font-size: $px10;
+            border: 2px solid #fff;
+            background: $sand-d2;
+            padding: 3px;
+            text-align: center;
+            transition: all .5s;
+
+            @mixin atXS {
+                font-size: $px16;
+                padding: 4.1px;
+            }
+            
+            @mixin atL {
+                border: 2px solid #fff;
+                font-size: $px18;
+                padding: 4.85px;
+            }
+            
+            @mixin atXL {
+                border: 2px solid #fff;
+                font-size: $px18;
+                padding: 5.15px;
+            }
+            
+            
+            a {
+                color: $violet;
+                font-size: $px12;
+                text-decoration: none;
+                
+                @mixin atXS {
+                    font-size: $px18;
+                }
+                
+                @mixin atXS {
+                    font-size: $px21;
+                }
+            }
+            
+            &:last-child {
+                background: $sand-d3;
+            }
+            
+            &[colspan="2"] {
+                background: $sand-d2;
+            }
+            
+        }
+        
+        tr:hover td {
+            background: $orange;
+        }
+        
+    }
+}
