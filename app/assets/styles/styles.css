@@ -1,7 +1,7 @@
 @import "../../../node_modules/bootstrap/dist/css/bootstrap-reboot";
 @import "../../../node_modules/bootstrap/dist/css/bootstrap-grid";
 
-@import "base/_fonts";
+@import "base/_fonts"; 
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
@@ -22,4 +22,4 @@
 @import "modules/_other-products";
 @import "modules/_contacts";
 @import "modules/_reveal-item";
-@import "modules/_modal";
+@import "modules/_modal";    

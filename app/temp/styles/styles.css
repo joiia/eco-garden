@@ -1871,13 +1871,14 @@ p {
     }
 @media (min-width: 992px) {
 .page-section--trees-bg {
-            padding: 25px 0 53px
+            padding: 105px 0 53px
         
     }
     }
 .page-section--image-bg {
         position: relative;
         padding: 50px 0;
+        min-height: calc(100vh - 80px) !important;
     }
 @media (min-width: 480px) {
 .page-section--image-bg {
@@ -2204,7 +2205,7 @@ p {
         height: 18px;
         position: absolute;
         top: 32px;
-        right: 15px;
+        right: 0;
         z-index: 10;
     }
 .site-header__menu-icon::before {
@@ -2276,6 +2277,7 @@ p {
         padding: 60px 37px 110px;
         visibility: hidden;
         transition: opacity 0.3s, visibility 0s linear 0.3s;
+        min-height: calc(100vh - 80px);
         
         
     }
@@ -2286,7 +2288,8 @@ p {
             padding: 0;
             opacity: 1;
             z-index: 2;
-            visibility: visible
+            visibility: visible;
+            min-height: inherit
         
         
     }
@@ -2395,22 +2398,24 @@ p {
     }
 .site-header--fixed .site-header__menu--is-visible {
             top: 60px;
-            overflow-y: none;
             padding-bottom: 0;
             padding-top: 0;
-            height: 300px;
+            height: calc(100vh - 60px);
+            display: block;
+            overflow-y: auto;
         }
 .site-header--fixed .site-header__menu--is-visible .primary-nav {
-                height: 300px;
                 display: block;
             }
-.site-header--fixed .site-header__menu--is-visible ul {
-                height: 300px;
-                padding-top: 50px;
-                padding-bottom: 0;
-                overflow-y: auto;
-            }
-.site-header--fixed .site-header__menu--is-visible li:last-child {
+.site-header--fixed .site-header__menu--is-visible .primary-nav > ul {
+                    padding-top: 50px;
+                    padding-bottom: 0;
+                }
+.site-header--fixed .site-header__menu--is-visible .primary-nav > ul > li:last-child {
+                        padding-bottom: 80px;
+                    }
+.site-header--fixed .site-header__menu--is-visible .primary-nav__child {
+                display: none !important;
             }
 .primary-nav {
     
@@ -3078,4 +3083,4 @@ p {
 .modal--is-visible {
         opacity: 1;
         z-index: 5;
-    }
+    }    

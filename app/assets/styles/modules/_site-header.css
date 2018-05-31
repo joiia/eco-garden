@@ -51,7 +51,7 @@
         height: 18px;
         position: absolute;
         top: 32px;
-        right: 15px;
+        right: 0;
         z-index: 10;
         
         &::before {
@@ -122,6 +122,7 @@
         padding: 60px 37px 110px;
         visibility: hidden;
         transition: opacity 0.3s, visibility 0s linear 0.3s;
+        min-height: calc(100vh - 80px);
         
         @mixin atM {
             background: transparent;
@@ -130,6 +131,7 @@
             opacity: 1;
             z-index: 2;
             visibility: visible;
+            min-height: inherit;
         }
         
         &--is-visible {
@@ -235,24 +237,27 @@
         
         .site-header__menu--is-visible {
             top: 60px;
-            overflow-y: none;
             padding-bottom: 0;
             padding-top: 0;
-            height: 300px;
+            height: calc(100vh - 60px);
+            display: block;
+            overflow-y: auto;
             
             .primary-nav {
-                height: 300px;
                 display: block;
+                
+                > ul {
+                    padding-top: 50px;
+                    padding-bottom: 0;
+                    
+                    > li:last-child {
+                        padding-bottom: 80px;
+                    }
+                }
             }
             
-            ul {
-                height: 300px;
-                padding-top: 50px;
-                padding-bottom: 0;
-                overflow-y: auto;
-            }
-            
-            li:last-child {
+            .primary-nav__child {
+                display: none !important;
             }
         }
         

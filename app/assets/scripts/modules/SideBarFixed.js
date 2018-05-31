@@ -7,7 +7,7 @@ class SideBarFixed {
         this.topTriggerElement = $('#main-content');
         this.bottomTriggerElement = $('.other-products');
         this.offcetTop = 80 - ($('.sidebar-area').innerHeight());
-        this.offcetBottom = $('.sidebar--nav').innerHeight() + 140;
+        this.offcetBottom = $('.sidebar--nav').innerHeight() + 240;
         this.sidebarWidth = $('.sidebar-area').width();
         this.createWaypoints();
         this.setSidebarWidth();

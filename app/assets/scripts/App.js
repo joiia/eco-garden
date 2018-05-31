@@ -1,3 +1,4 @@
+
 import $ from 'jquery';
 
 import MobileMenu from "./modules/MobileMenu";
@@ -14,5 +15,4 @@ var stickyHeader = new StickyHeader();
 
 var openModal = new OpenModal();
 
-var sideBarFixed = new SideBarFixed(); 
- 
+var sideBarFixed = new SideBarFixed();  
